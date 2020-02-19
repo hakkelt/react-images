@@ -25,6 +25,7 @@ const View = (props: Props) => {
   const innerProps = {
     alt: formatters.getAltText({ data, index }),
     src: getSource({ data, isFullscreen }),
+    srcSet: getSourceSet( data ),
   };
 
   return (
